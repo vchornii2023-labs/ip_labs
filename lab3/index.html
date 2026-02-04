@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorna 3 Forma</title>
+  </head>
+  <body>
+    <header>
+      <h1>Student card FORM</h1>
+    </header>
+    <section>
+      <header>
+        <h2>Personal information</h2>
+      </header>
+       <fieldset>
+        <legend>Provide your details</legend>
+
+        <label for="fullName">Full Name: </label>
+        <input type="text" id="fullName" placeholder="Enter your name">
+
+        <br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <br><br>
+
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" placeholder="Enter a password">
+
+        <br><br>
+        
+        <label for="age">Age: </label>
+        <input type="number" id="age" size="5">
+
+        <br><br>
+
+        <label for="dateOfBirth">Date of Birt:</label>
+        <input type="date" id="dateOfBirth">
+
+        <br><br>
+<!-- Якщо для кожного input є id то що тоді має відображати "Gender"? простий текст? -->
+        <label for="gender">Gender:</label><br>
+
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">Male</label><br>
+
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">Famele</label><br>
+
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">Other</label>
+        
+        <br><br>
+
+        <label for="lang">Gender:</label><br>
+
+        <input type="checkbox" id="lang" name="lang">
+        <label for="lang">English</label><br>
+
+        <input type="checkbox" id="lang" name="lang">
+        <label for="lang">Spanish</label><br>
+
+        <input type="checkbox" id="lang" name="lang">
+        <label for="lang">French</label>
+
+        <br><br>
+
+        <label>
+          Country:
+          <select>
+            <option disabled selected>Select your country</option>
+            <option>Ukraine</option>
+            <option>Poland</option>
+            <option>America</option>
+            <option>French</option>
+          </select>
+        </label>
+      </fieldset>
+    </section>
+
+
+<section>
+<h1>College Subjects</h1>
+<fieldset>
+  <legend>Select your subjects</legend>
+  <select multiple>
+    <option>Mathematics</option>
+    <option>Computer Science</option>
+    <option>Physics</option>
+    <option>Chemistry</option>
+    <option>Programming</option>
+  </select>
+
+  <br><br>
+
+  <Label>
+    Rate your interest in Computer Science:
+    <input type="range" min="0" max="10" step="1">
+  </Label>
+</fieldset>
+</section>
+
+
+<section>
+  <h1>Skills Assessment</h1>
+  <fieldset>
+    <legend>Assess your skills</legend>
+
+  <label>
+    Decribe your skills: <br>
+    <textarea placeholder="Lest your skills here..." rows="5" cols="60"></textarea>
+  </label>
+  
+  <br><br>
+
+  <label>Upload your resume:
+    <!-- placeholder="Choose File" а є ще методи аби змінити імя без Js та Css? -->
+    <input type="file">
+  </label>
+
+
+  <br><br>
+
+
+  <label>
+    Pick your favorite color:
+    <input type="color">
+  </label>
+
+
+  <br><br>
+
+
+  <label>
+    Preferred study time: <input type="time">
+  </label>
+
+  <br><br>
+
+
+  <label>
+    <input type="submit" value="Submit Survey">
+  </label>
+  </fieldset>
+</section>
+</body>
+
+<footer>
+  <h5>Student card by Volodia. All rights reserved</h5>
+</footer>
+</html>
+
+
+
