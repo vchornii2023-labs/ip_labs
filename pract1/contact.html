@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <form action="/" method="post">
+    <h1 style="font-size: 20px;">Надішліть нам відгук</h1>
+        <label>
+            Вкажіть свою почту
+            <input type="email" name="email" id="email" placeholder="Email" >
+        </label>
+        
+        <label>
+            Введіть тему
+            <input type="text" name="Theme" id="Theme" placeholder="Тема">
+        </label>
+
+        <label>
+            Введіть повідомлення
+            <textarea name="messege" id="messege" placeholder="напишість щось" cols="20" rows="10"></textarea>
+        </label>
+        
+        <label>
+            <button type="submit">Надіслати</button>
+        </label>
+    </form>
+
+    
+    <form action="/" method="post" id="subscribe">
+        <h1 style="font-size: 20px;">Підпишіться на розсилку</h1>
+
+        <label>
+            Вкажіть пашу почту для підтвердження
+            <input type="email" name="emailForSub" id="emailForSub" placeholder="exampleEmail@email.com">
+        </label>
+        <label>
+            Підтвердіть згоджу на одерження розсилки
+            <input type="checkbox" name="confirmAnnoncCheck" id="confirmAnnoncCheck">
+        </label>
+        <button>Підписатися</button>
+
+    </form>
+</body>
+</html>
