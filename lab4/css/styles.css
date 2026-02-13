@@ -15,6 +15,9 @@ body {
 
 #featured_container {
   background: #c2c2c2;
+box-sizing: border-box;
+height: 715px;
+padding-top: 20px;
 }
 
 .container {
@@ -23,6 +26,7 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  
 }
 
 .row {
