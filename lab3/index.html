@@ -4,6 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laboratorna 3 Forma</title>
+    <style>
+      input {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="radio"],
+      [type="checkbox"] {
+        display: inline;
+      }
+
+      label[id="nameOfSectionForGender"],
+      label[id="nameOfSectionForLanguage"] {
+        display: block;
+      }
+
+      label[id="countrySelector"] {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      select[id="subjectSelector"] {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      textarea {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -17,60 +49,85 @@
         <fieldset>
           <legend>Provide your details</legend>
 
-          <label for="fullName">Full Name: </label>
-          <input type="text" id="fullNameId" name="fullName" placeholder="Enter your name" />
-
-          <br /><br />
+          <label for="fullName">Full Name (3-16 characters): </label>
+          <input
+            type="text"
+            id="fullNameId"
+            name="fullName"
+            placeholder="Enter your name"
+            required
+            pattern="\w{3,16}"
+          />
 
           <label for="email">Email: </label>
-          <input type="email" id="emailiId" name="email" placeholder="Enter your email "  />
+          <input
+            type="email"
+            id="emailiId"
+            name="email"
+            placeholder="Enter your email "
+            required
+          />
 
-          <br /><br />
-
-          <label for="pass">Password: </label>
-          <input type="password" id="passid" name="pass" placeholder="Enter a password" />
-
-          <br /><br />
+          <label for="pass">Password (min 8 numbers): </label>
+          <input
+            type="password"
+            id="passid"
+            name="pass"
+            placeholder="Enter a password"
+            pattern="\d.{8,}"
+            required
+            title="Тільки цифри, мінімум 8 цифр."
+          />
 
           <label for="age">Age: </label>
-          <input type="number" id="ageId" name="age"/>
-
-          <br /><br />
+          <input type="number" id="ageId" name="age" />
 
           <label for="dateOfBirth">Date of Birt:</label>
-          <input type="date" id="dateOfBirthId" name="dateOfBirth"/>
+          <input type="date" id="dateOfBirthId" name="dateOfBirth" />
 
-          <br /><br />
-          <!-- Якщо для кожного input є id то що тоді має відображати "Gender"? простий текст? -->
-          <label>Gender:</label><br />
+          <label id="nameOfSectionForGender">Gender:</label>
 
           <label for="gender">Male</label>
-          <input type="radio" id="genderMaleId" name="gender" value="genderMale"/>
+          <input
+            type="radio"
+            id="genderMaleId"
+            name="gender"
+            value="genderMale"
+          />
 
-          <br>
           <label for="genderFemele">Famele</label>
-          <input type="radio" id="genderFemeleId" name="gender" value="genderFemele"/>
+          <input
+            type="radio"
+            id="genderFemeleId"
+            name="gender"
+            value="genderFemele"
+          />
 
-          <br>
           <label for="otherId">Other</label>
           <input type="radio" id="otherId" name="gender" value="other" />
 
-          <br /><br />
-
-          <label>Language:</label><br />
+          <label id="nameOfSectionForLanguage">Language:</label>
 
           <label for="EnglishId">English</label>
-          <input type="checkbox" id="EnglishId" name="Language" value="English" /><br />
-          
+          <input
+            type="checkbox"
+            id="EnglishId"
+            name="Language"
+            value="English"
+          />
+
           <label for="SpanishId">Spanish</label>
-          <input type="checkbox" id="SpanishId" name="Language" value="Spanish" /><br />
+          <input
+            type="checkbox"
+            id="SpanishId"
+            name="Language"
+            value="Spanish"
+          />
 
           <label for="FrenchId">French</label>
-          <input type="checkbox" id="FrenchId" name="Language" value="French"/>
+          <input type="checkbox" id="FrenchId" name="Language" value="French" />
 
-          <br /><br />
-
-          <label>
+          <label id="countrySelector">
             Country:
             <select name="Select Country">
               <option disabled selected>Select your country</option>
@@ -88,7 +145,7 @@
 
         <fieldset>
           <legend>Select your subjects</legend>
-          <select multiple name="Subjects">
+          <select multiple name="Subjects" id="subjectSelector" required>
             <option>Mathematics</option>
             <option>Computer Science</option>
             <option>Physics</option>
@@ -96,11 +153,16 @@
             <option>Programming</option>
           </select>
 
-          <br /><br />
-
           <label>
             Rate your interest in Computer Science:
-            <input type="range" min="0" max="10" step="1" name="range" id="rangeid" />
+            <input
+              type="range"
+              min="0"
+              max="10"
+              step="1"
+              name="range"
+              id="rangeid"
+            />
           </label>
         </fieldset>
       </section>
@@ -111,7 +173,7 @@
           <legend>Assess your skills</legend>
 
           <label>
-            Decribe your skills: <br />
+            Decribe your skills:
             <textarea
               placeholder="Lest your skills here..."
               rows="5"
@@ -120,29 +182,19 @@
             ></textarea>
           </label>
 
-          <br /><br />
-
           <label
             >Upload your resume:
-            <!-- placeholder="Choose File" а є ще методи аби змінити імя без Js та Css? -->
             <input type="file" name="fileChooser"/>
           </label>
 
-          <br /><br />
-
           <label>
             Pick your favorite color:
-            <input type="color" name="PickColor"/>
+            <input type="color" name="PickColor" />
           </label>
 
-          <br /><br />
-
-          <label> Preferred study time: <input type="time" name="StudyTime"/> </label>
-
-          <br /> <br />
-
-
-
+          <label>
+            Preferred study time: <input type="time" name="StudyTime" />
+          </label>
 
           <label>
             <input type="submit" value="Submit Survey" />
@@ -151,11 +203,8 @@
       </section>
     </form>
 
-
-
     <footer>
       <h5>Student card by Volodia. All rights reserved</h5>
     </footer>
-
   </body>
 </html>
