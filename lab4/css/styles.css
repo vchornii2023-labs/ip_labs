@@ -7,6 +7,23 @@ body {
   font-size: 1.6rem;
 }
 
+#block-lpnu-main-menu,
+.region-sidebar-second,
+.logo,
+.page-header,
+#hero,
+#block-lpnushortcutstop4,
+#featured_container h2,
+#events_container,
+.news_teaser,
+.block-views-blockfront-page-news-block-3 h2,
+.paragraph--type--person-with-description .field--name-field-person-name,
+.view-header h1 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
 .fontyourface {
   font-family: "Roboto";
   font-style: normal;
@@ -15,9 +32,9 @@ body {
 
 #featured_container {
   background: #c2c2c2;
-box-sizing: border-box;
-height: 715px;
-padding-top: 20px;
+  box-sizing: border-box;
+  height: 715px;
+  padding-top: 20px;
 }
 
 .container {
@@ -26,7 +43,6 @@ padding-top: 20px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  
 }
 
 .row {
@@ -59,8 +75,8 @@ padding-top: 20px;
 }
 
 #featured_container .shadow_featured {
-  position: absolute !important;
-  margin-bottom: 0 !important;
+  position: absolute;
+  margin-bottom: 0;
   bottom: 0;
   left: 0;
   min-height: 75%;
@@ -85,14 +101,13 @@ h4,
 h5,
 h6 {
   line-height: 1.1;
-  color: inherit;
+  color: #fff;
   font-size: 3rem;
 }
 
-
 #featured_container a:link h2 span {
   background: #252775;
-  transition:  2s ease-out;
+  transition: 2s ease-out;
 }
 
 #featured_container h2 {
