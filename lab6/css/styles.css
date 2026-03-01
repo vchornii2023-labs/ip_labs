@@ -1,3 +1,23 @@
+/* За замовчуванням (мобільні) */
+.gridOfNews {
+  display: grid;
+  grid-template-columns: 1fr; /* Одна колонка */
+  grid-template-rows: auto;
+}
+
+/* Планшети (від 768px) */
+@media screen and (min-width: 768px) {
+  .gridOfNews {
+    grid-template-columns: repeat(2, 1fr); /* Дві колонки */
+  }
+}
+
+/* Десктоп (від 1024px) */
+@media screen and (min-width: 1024px) {
+  .gridOfNews {
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+  }
+}
 
 .container {
   background-color: rgb(194, 194, 194);
