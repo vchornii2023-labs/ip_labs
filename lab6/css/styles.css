@@ -1,3 +1,23 @@
+/* За замовчуванням (мобільні) */
+.gridOfNews {
+  display: grid;
+  grid-template-columns: 1fr; /* Одна колонка */
+  grid-template-rows: auto;
+}
+
+/* Планшети (від 768px) */
+@media screen and (min-width: 768px) {
+  .gridOfNews {
+    grid-template-columns: repeat(2, 1fr); /* Дві колонки */
+  }
+}
+
+/* Десктоп (від 1024px) */
+@media screen and (min-width: 1024px) {
+  .gridOfNews {
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+  }
+}
 
 .container {
   background-color: rgb(194, 194, 194);
@@ -41,4 +61,60 @@
   width: 100%;
   bottom: 0;
   left: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+#headerOfNews{
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  margin: 30px;
+  font-family: "Roboto Condensed";
+  text-decoration-color: rgb(0, 133, 189);
+  color: rgb(0, 133, 189);
+  line-height: 48.8px;
+}
+
+.gridOfNews {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 262.5px 262.5px 262.5px 262.5px;
+  grid-auto-flow: row;
+  justify-content: center;
+  gap:30px;
+  margin-bottom: 20px;
+}
+
+.gridItems {
+  position: relative;
+  background-color: rgb(246, 246, 246);
+  line-height: 1.24;
+  
+}
+
+.gridItems a{
+  text-decoration-line: none;
+  color: rgb(0, 161, 228);
+}
+
+.img-responsive {
+  border-bottom: 2px solid rgb(117, 117, 117);
+}
+
+.dateOfPhoto {
+  position: relative;
+  left: 0;
+  bottom: 11px;
+  color: white;
+  background: #757575;
+  padding: 5px 7px;
+  margin-left: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.descriptionOfNews {
+font-family: 'Roboto';
+padding-left: 15px;
 }
