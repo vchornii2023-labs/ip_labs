@@ -1,30 +1,9 @@
-/* За замовчуванням (мобільні) */
-.gridOfNews {
-  display: grid;
-  grid-template-columns: 1fr; /* Одна колонка */
-  grid-template-rows: auto;
-}
-
-/* Планшети (від 768px) */
-@media screen and (min-width: 768px) {
-  .gridOfNews {
-    grid-template-columns: repeat(2, 1fr); /* Дві колонки */
-  }
-}
-
-/* Десктоп (від 1024px) */
-@media screen and (min-width: 1024px) {
-  .gridOfNews {
-    grid-template-columns: repeat(3, 1fr); /* Три колонки */
-  }
-}
-
 .container {
   background-color: rgb(194, 194, 194);
   display: flex;
   flex-wrap: wrap;
 
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: normal;
   font-size: 23px;
@@ -56,7 +35,11 @@
 
 .shadow_featured {
   position: absolute;
-  background: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0.85));
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.85)
+  );
   min-height: 75%;
   width: 100%;
   bottom: 0;
@@ -65,7 +48,7 @@
 
 /* ------------------------------------------------------------------------------------------------------- */
 
-#headerOfNews{
+#headerOfNews {
   display: block;
   font-size: 30px;
   text-align: center;
@@ -82,18 +65,18 @@
   grid-template-columns: 262.5px 262.5px 262.5px 262.5px;
   grid-auto-flow: row;
   justify-content: center;
-  gap:30px;
+  gap: 30px;
   margin-bottom: 20px;
+  margin: 0 auto; /* Вирівнює по центру по горизонталі */
 }
 
 .gridItems {
   position: relative;
   background-color: rgb(246, 246, 246);
   line-height: 1.24;
-  
 }
 
-.gridItems a{
+.gridItems a {
   text-decoration-line: none;
   color: rgb(0, 161, 228);
 }
@@ -115,6 +98,32 @@
 }
 
 .descriptionOfNews {
-font-family: 'Roboto';
-padding-left: 15px;
+  font-family: "Roboto";
+  padding-left: 15px;
+}
+
+/* За замовчуванням (мобільні) */
+@media screen and (width <= 767px) {
+  .gridOfNews {
+    grid-template-columns: 1fr;
+    width: min-content;
+    gap: 5px;
+  }
+}
+
+/* Планшети (від 768px) */
+@media screen and (768px <= width < 1024px) {
+  .gridOfNews {
+    grid-template-columns: repeat(2, 1fr); /* Дві колонки */
+    width: min-content;
+    gap: 10px;
+  }
+}
+
+/* Десктоп (від 1024px) */
+@media screen and (width >= 1024px) {
+  .gridOfNews {
+    grid-template-columns: repeat(4, 1fr); /* Три колонки */
+    width: min-content;
+  }
 }
