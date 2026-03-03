@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.container {
+  background-color: rgb(194, 194, 194);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  padding: 20px 20px;
+  justify-content: center;
+  gap: 20px 20px;
+}
+
+.items {
+  width: 555px;
+  height: 277.5px;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  background: rgb(37, 39, 117);
+  color: white;
+  font-size: 1em;
+  line-height: 1.1;
+  bottom: 0;
+  left: 0;
+  margin: 35px;
+}
+
+.items div {
+  position: absolute;
+}
+
+.shadow_featured {
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.85));
+  min-height: 75%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+#headerOfNews {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  margin: 30px;
+  font-family: "Roboto Condensed";
+  text-decoration-color: rgb(0, 133, 189);
+  color: rgb(0, 133, 189);
+  line-height: 48.8px;
+}
+
+.gridOfNews {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 262.5px 262.5px 262.5px 262.5px;
+  grid-auto-flow: row;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  margin: 0 auto; /* Вирівнює по центру по горизонталі */
+}
+
+.gridItems {
+  position: relative;
+  background-color: rgb(246, 246, 246);
+  line-height: 1.24;
+}
+
+.gridItems a {
+  text-decoration-line: none;
+  color: rgb(0, 161, 228);
+}
+
+.img-responsive {
+  border-bottom: 2px solid rgb(117, 117, 117);
+}
+
+.dateOfPhoto {
+  position: relative;
+  left: 0;
+  bottom: 11px;
+  color: white;
+  background: #757575;
+  padding: 5px 7px;
+  margin-left: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.descriptionOfNews {
+  font-family: "Roboto";
+  padding-left: 15px;
+}
+
+html {
+  background-color: rgba(207, 199, 173, 0.349);
+}
+
+/* За замовчуванням (мобільні) */
+@media screen and (min-width: 576px) {
+  .gridOfNews {
+    grid-template-columns: 1fr;
+    width: min-content;
+    gap: 5px;
+  }
+}
+/* Планшети (від 768px) */
+@media screen and (min-width: 768px) {
+  .gridOfNews {
+    grid-template-columns: repeat(2, 1fr); /* Дві колонки */
+    width: min-content;
+    gap: 10px;
+  }
+}
+/* Десктоп (від 1024px) */
+@media screen and (min-width: 1024px) {
+  .gridOfNews {
+    grid-template-columns: repeat(4, 1fr); /* Три колонки */
+    width: min-content;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
