@@ -6,7 +6,8 @@ body {
   margin: 0;
 }
 
-.mainhead {
+/* ---------------Header---------------------------- */
+.header {
   display: block;
   width: 1170px;
   margin: 0 auto;
@@ -14,54 +15,47 @@ body {
   background-color: white;
 }
 
-.logotext {
+/* Logo */
+.logo {
+  position: relative;
+}
+
+.logo__title {
+  display: inline-block;
+  width: 400px;
+  top: 23px;
+  left: 197px;
+  position: absolute;
+}
+
+.logo__title-text {
   display: inline;
   background-color: rgb(46, 49, 146);
-  background-size: auto;
   color: rgb(240, 240, 240);
   font-family: "Roboto Condensed";
   font-size: 24px;
-  font-style: normal;
-  letter-spacing: 2px;
-  line-height: 31px;
-}
-
-.logotextbox {
-  box-sizing: border-box;
-  color: rgb(240, 240, 240);
-  display: inline-block;
-  font-family: "Roboto Condensed";
-  font-size: 24px;
-  font-style: normal;
   font-weight: 500;
-  height: 62px;
-  left: 200px;
   letter-spacing: 2px;
   line-height: 31px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  position: absolute;
-  top: 35px;
-  width: 400px;
 }
+/* END Logo */
 
-.links {
+/* switchLanguage */
+.language-switcher {
   position: absolute;
   left: 837px;
   top: 0;
   scale: 0.7;
 }
 
-.links li {
+.language-switcher__item {
   display: inline;
   list-style: none;
   background-color: rgb(221, 221, 221);
   padding: 5px;
 }
 
-.links a {
+.language-switcher__link {
   text-decoration: none;
   color: rgb(0, 161, 228);
   font-family: "Roboto";
@@ -70,27 +64,16 @@ body {
   font-weight: 400;
   line-height: 22.85px;
 }
+/* END switchLanguage */
 
-.input-group {
-  border-collapse: separate;
-  box-sizing: border-box;
-  color: rgb(51, 51, 51);
-  display: table;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22.85px;
-  position: relative;
-}
-
-.searchSection {
+/* search-button */
+.search {
   position: absolute;
   left: 757px;
   top: 61px;
 }
 
-#search {
+.search__field {
   width: 316px;
   padding-bottom: 6px;
   padding-left: 12px;
@@ -117,7 +100,7 @@ body {
   border-bottom-style: solid;
 }
 
-.buttonOfSearch {
+.search__button {
   background-color: rgb(40, 96, 144);
   border-bottom-color: rgb(32, 77, 116);
   border-bottom-style: solid;
@@ -140,14 +123,19 @@ body {
   left: 316.1px;
   top: 0px;
 }
+/* END search-button */
 
-.navi ul {
-  border-top: 10px solid rgba(207, 199, 173, 0.349);
-  padding: 10px 0;
+/* Navigation in header */
+.navigation {
+}
+
+.navigation__list {
+  border-top: 15px solid rgba(207, 199, 173, 0.349);
+  padding: 15px 0px;
   text-align: center;
 }
 
-.navi ul li {
+.navigation__item {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(84, 84, 84);
   display: inline-block;
@@ -159,7 +147,14 @@ body {
   position: relative;
 }
 
-.container {
+.navigation__item--dimmed {
+  background-color: #f8f8f8;
+}
+/* END navigation in header */
+
+/* -------------------------------------- SECTION OF PREVIEW NEWS -------------------------------------------------------*/
+/* NewsPreview */
+.preview {
   background-color: rgb(194, 194, 194);
   display: flex;
   flex-wrap: wrap;
@@ -172,13 +167,20 @@ body {
   gap: 20px 20px;
 }
 
-.items {
-  width: 555px;
-  height: 277.5px;
+.preview-card {
   position: relative;
 }
 
-.text {
+.preview-card__fog {
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.85));
+  min-height: 75%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.preview-card__description {
   position: absolute;
   background: rgb(37, 39, 117);
   color: white;
@@ -188,26 +190,10 @@ body {
   left: 0;
   margin: 35px;
 }
+/* END NewsPreview */
 
-.items div {
-  position: absolute;
-}
-
-.shadow_featured {
-  position: absolute;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.85)
-  );
-  min-height: 75%;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-#headerOfNews {
+/* --------------------------------- NEWS ------------------------------------------- */
+.news__title {
   display: block;
   font-size: 30px;
   text-align: center;
@@ -218,7 +204,7 @@ body {
   line-height: 48.8px;
 }
 
-.gridOfNews {
+.news {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 262.5px 262.5px 262.5px 262.5px;
@@ -229,22 +215,25 @@ body {
   margin: 0 auto; /* Вирівнює по центру по горизонталі */
 }
 
-.gridItems {
+.news-card {
   position: relative;
   background-color: rgb(246, 246, 246);
   line-height: 1.24;
 }
 
-.gridItems a {
+.news-card__teaser {
+}
+
+.news-card__link {
   text-decoration-line: none;
   color: rgb(0, 161, 228);
 }
 
-.img-responsive {
+.news-card__image {
   border-bottom: 2px solid rgb(117, 117, 117);
 }
 
-.dateOfPhoto {
+.news-card__date {
   position: relative;
   left: 0;
   bottom: 11px;
@@ -256,7 +245,7 @@ body {
   text-transform: uppercase;
 }
 
-.descriptionOfNews {
+.news-card__description {
   font-family: "Roboto";
   padding-left: 15px;
 }
@@ -264,63 +253,51 @@ body {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: min-content 1fr;
-  grid-template-areas:"firstHead secondHead ." "firstDesc secondDesc thirdColumn";
+  grid-template-rows: min-content min-content;
   padding: 0px 20%;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: normal;
 }
 
-.footer ul li{
+
+/* Placement */
+.footer__title {
+  text-align: center;
+  grid-row: 1;
+}
+
+.footer__list {
+  grid-row: 2;
+}
+
+.footer__badges {
+  grid-row: 2;
+}
+/* Placement END */
+.footer__item {
   list-style: none;
   margin-bottom: 10px;
 }
 
-
-.footer h2:nth-of-type(1) {
-  grid-area: firstHead;
-  justify-self: center;
-}
-
-.footer h2:nth-of-type(2) {
-  grid-area: secondHead;
-  justify-self: center;
-}
-
-.footer ul:nth-of-type(1) {
-  grid-area: firstDesc;
-}
-
-.footer ul:nth-of-type(2) {
-  grid-area: secondDesc;
-}
-
-.footer div:last-child{
-  grid-area: thirdColumn;
-}
-
-.footer a{
+.footer__link {
   color: #337ab7;
   text-decoration: none;
 }
 
-.icons {
+.footer__icon {
   width: 25px;
   height: 25px;
 }
 
-
-.footer-icons {
+.footer__badge {
   float: left;
 }
 
 
-
-
 /* За замовчуванням (мобільні) */
 @media screen and (min-width: 576px) {
-  .gridOfNews {
+  .news {
     grid-template-columns: 1fr;
     width: min-content;
     gap: 5px;
@@ -328,7 +305,7 @@ body {
 }
 /* Планшети (від 768px) */
 @media screen and (min-width: 768px) {
-  .gridOfNews {
+  .news {
     grid-template-columns: repeat(2, 1fr); /* Дві колонки */
     width: min-content;
     gap: 10px;
@@ -336,7 +313,7 @@ body {
 }
 /* Десктоп (від 1024px) */
 @media screen and (min-width: 1024px) {
-  .gridOfNews {
+  .news {
     grid-template-columns: repeat(4, 1fr); /* Три колонки */
     width: min-content;
   }
