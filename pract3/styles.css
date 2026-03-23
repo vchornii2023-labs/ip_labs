@@ -1,0 +1,166 @@
+/* Header */
+.header {
+  display: flex;
+  /* Я потім зменшу контекст для responsive*/
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo {
+  display: flex;
+  margin: 32.5px 100px;
+  gap: 10px;
+  align-items: center;
+  width: 154px;
+  height: 35px;
+}
+
+.logo__image {
+  line-height: 0px;
+}
+
+.logo__text {
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+/* Автентифікація */
+.authentication {
+  /* А я маю взагалі на скільки сильно слідувати figma? Навіть стилі вибирати як у них?
+    Бо тут вроді за стилями display:block-inline */
+  display: flex;
+  height: 54px;
+  width: 251px;
+  margin: 23px 100px;
+}
+
+.authentication__log-in-button {
+  background-color: #3366ff;
+  border-radius: 10px;
+  width: 153px;
+  height: 54px;
+  text-align: center;
+  align-content: center;
+}
+
+.authentication__log-in-link {
+  color: white;
+  padding: 8px 40px;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 18px;
+}
+
+.authentication__sign-up-button {
+  text-align: center;
+  align-content: center;
+}
+
+.authentication__sign-up-link {
+  color: black;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+/* Intro */
+
+.intro {
+  /* position: relative; */
+  display: flex;
+  background-color: #f7f5fd;
+  height: 600px;
+  padding: 70px 100px;
+  justify-content: center;
+  gap: 114px;
+  box-sizing: border-box;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  height: 460px;
+}
+
+.description__title {
+  display: block;
+  font-family: "Poppins";
+  font-size: 80px;
+  line-height: 1.06;
+  color: #2d2d2d;
+  width: 424px;
+  height: 176px;
+}
+
+.description__subtitle {
+  display: block;
+  opacity: 50%;
+  font-family: "Poppins";
+  font-size: 18px;
+  width: 466px;
+  height: 90px;
+  -webkit-text-stroke: 1px #2d2d2d;
+  margin-top: 30px;
+}
+
+.intro__button {
+  display: inline-block;
+  font-family: "Poppins";
+  line-height: 32px;
+  font-size: 18px;
+  align-content: center;
+  text-align: center;
+  background-color: #f8d57e;
+  color: #2d2d2d;
+  width: 203px;
+  height: 64px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 41px;
+  align-items: start;
+}
+
+.intro_image {
+  display: inline-block;
+  height: 600px;
+}
+
+/* Trailer */
+
+.trailer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: #f2faf8;
+}
+
+.trailer-video {
+  position: relative;
+}
+
+.trailer-video__image {
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.trailer-video__gradient {
+  position: absolute;
+  top: 0px;
+  background: linear-gradient(180deg,rgba(45, 45, 45, 0.9) 0%, rgba(45, 45, 45, 0.5) 100%);
+  width: 765px;
+  height: 460px;
+  z-index: 2;
+}
+
+.trailer-video__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+}
