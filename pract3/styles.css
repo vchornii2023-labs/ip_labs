@@ -137,6 +137,7 @@
   justify-content: center;
   align-items: center;
   height: 600px;
+  padding: 5px;
   background-color: #f2faf8;
 }
 
@@ -163,4 +164,52 @@
     top: 50%;
     left: 50%;
     z-index: 3;
+}
+
+
+/* Brands */
+
+.brands-box__list {
+    display: flex;
+    gap: 70px;
+    list-style-type: none;
+    justify-content: center;
+    padding: 80px 172px;
+    margin: 0;;
+}
+
+/* Cards box */
+
+.cards-box {
+    display: flex;
+    justify-content: center;
+    padding: 90px 116px;
+}
+
+.card {
+margin: 0 auto;
+text-align: center;
+width: 230px;
+height: 268px;
+}
+
+.card__title {
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card__desc {
+    font-family: 'poppins';
+    font-size: 18px;
+    line-height: 32px;
+    color: #2d2d2d;
+    opacity: 50%;
+
+}
+
+.card__image {
+    margin: 0 auto 40px auto;
+
 }
