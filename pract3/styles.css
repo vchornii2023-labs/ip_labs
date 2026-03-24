@@ -181,8 +181,11 @@
 /* Cards box */
 
 .cards-box {
+    margin: 0 auto;
+    gap: 60px;
     display: flex;
     justify-content: center;
+    width: min-content;
     padding: 90px 116px;
 }
 
