@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pract2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">World Trivia</h1>
+      <nav>
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li class="nav-list__item"><a class="nav-list__link" href="#">Home</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">Trivia</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">Categories</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">Scores</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">Subscribe</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="home">
+          <h2 class="home__title">Share your travels</h2>
+          <p class="home__desc">On this website, you can share your travel experiences and view those of other users</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="cards">
+          <div class="card">
+            <img src="assets/Rectangle 9.jpg" alt="photo of action recreation" />
+            <h3 class="card__title">Active recreation</h3>
+            <p class="card__desc">For those who love adventure and fun experiences</p>
+          </div>
+
+          <div class="card">
+            <img src="assets/Rectangle 10.jpg" alt="photo of passive recreation" />
+            <h3 class="card__title">Passive recreation</h3>
+            <p class="card__desc">For those who love peace of mind and their hobbies</p>
+          </div>
+
+          <div class="card">
+            <img src="assets/Rectangle 11.jpg" alt="photo a holiday with friends" />
+            <h3 class="card__title">A holiday with friends</h3>
+            <p class="card__desc">For those who prefer a friendly and family atmosphere</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="links">
+          <p class="links__title">Список посилань</p>
+          <ul class="links__list">
+            <li class="links__item"><a class="links__link" href="https://www.youtube.com/@DvokolisniHroniky">Двохколісні хроніки</a></li>
+            <li class="links__item"><a class="links__link" href="https://www.youtube.com/@DvokolisniHroniky">Двохколісні хроніки</a></li>
+            <li class="links__item"><a class="links__link" href="https://www.youtube.com/@DvokolisniHroniky">Двохколісні хроніки</a></li>
+            <li class="links__item"><a class="links__link" href="https://www.youtube.com/@DvokolisniHroniky">Двохколісні хроніки</a></li>
+            <li class="links__item"><a class="links__link" href="https://www.youtube.com/@DvokolisniHroniky">Двохколісні хроніки</a></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <table class="tstat">
+          <thead>
+            <tr class="tstat__trow">
+              <th class="tstat__thead tstat__thead--distincted">Rank</th>
+              <th class="tstat__thead tstat__thead--distincted">Name</th>
+              <th class="tstat__thead tstat__thead--distincted">Score</th>
+              <th class="tstat__thead tstat__thead--distincted">Country</th>
+              <th class="tstat__thead tstat__thead--distincted">Category</th>
+              <th class="tstat__thead tstat__thead--distincted">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tstat__trow">
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+            </tr>
+            <tr class="tstat__trow">
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+            </tr>
+            <tr class="tstat__trow">
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+            </tr>
+            <tr class="tstat__trow">
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+            </tr>
+            <tr class="tstat__trow">
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+              <td class="tstat__desc tstat__desc--colored"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <div class="contact">
+          <p class="contact__text">Here we can get message from you</p>
+          <!-- Якщо я в css коді використаю ось такий селектор .contact__form * {...}
+            Це буде порушувати методику BEM? Бо для мене це зараз виглядає раціональніше аніж називати окремий label та input
+            Але тут тоже не той випадок. Загалом питання звучить так: Чи довзоляється використовувати селектори при методиці BEM наприклад *-->
+          <form class="form" action="/index.html" method="get">
+            <span class="form__caption"> Contact us: </span>
+            <label class="form__label" for="name"
+              >name:
+              <input type="text" name="name" />
+            </label>
+            <label class="form__label" for="email"
+              >email:
+              <div class="sr-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis consequatur dolor consequuntur iusto, nisi ut eveniet obcaecati praesentium quaerat voluptatum itaque placeat. Quaerat id quisquam magni modi minus sunt provident illum corrupti, nemo exercitationem ea nostrum autem neque corporis at laudantium aperiam vitae officiis. Ratione ipsum sunt iste rerum?</div>
+              <input type="email" name="email" />
+            </label>
+            <label class="form__label" for="textmessage"
+              >message:
+              <textarea name="textmessage" id="textmessage"></textarea>
+            </label>
+            <input class="form__submit" type="submit" value="submit" aria-label="button for push submit" />
+          </form>
+        </div>
+      </section>
+      <section>
+          <button class="puzzle-btn">Puzzle of the Day</button>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <span class="footer__title">Наші соціальні мережі:</span>
+        <span class="footer__item"><a class="footer__link" href="#">ФейсХук</a></span>
+        <span class="footer__item"><a class="footer__link" href="#">Твікер</a></span>
+        <span class="footer__item"><a class="footer__link" href="#">ІнстаХам</a></span>
+        <span class="footer__mark">© All Right Reserved</span>
+      </div>
+    </footer>
+  </body>
+</html>
