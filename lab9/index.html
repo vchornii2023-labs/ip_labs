@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>lab 9</title>
+</head>
+<body>
+
+
+    
+    <div class="task1">
+        <q>Передбачте результат виконання, потім запустіть код та поясніть його. 
+            console.log(a); // ? 
+            var a = 10; 
+            console.log(b); // ? 
+            let b = 20; 
+            console.log(c); // ? 
+            const c = 30;</q>
+
+        <button class="btn-task1" onclick="functionTask1()">Run task 1</button>, <span>Check result in console</span>
+    </div>
+
+
+    <div class="task2">
+        <q>Передбачте, які змінні будуть доступні після if-блоку. 
+        function testScope() { 
+        if (true) { 
+        var x = 5; 
+        let y = 10; 
+        const z = 15; 
+        } 
+        console.log(x); // ? 
+        console.log(y); // ? 
+        console.log(z); // ? 
+        } 
+        testScope();</q>
+
+        <button class="btn-task2" onclick="functionTask2()">Run task 2</button>, <span>Check result in console</span>
+    </div>
+
+
+    <div class="task3">
+        <q>Передбачте результати виконання коду: 
+            console.log(5 + "5"); // ? 
+            console.log("5" - 2); // ? 
+            console.log(true + false); // ? 
+            console.log(null + 1); // ? 
+            console.log(undefined + 1); // ? 
+            console.log(0 == false); // ? 
+            console.log(0 === false); // ?</q>
+
+        <button class="btn-task3" onclick="functionTask3()">Run task 3</button>, <span>Check result in console</span>
+    </div>
+
+
+    <div class="task4">
+        <q> 1. Запустіть код, поясніть результати. 
+            2. Використовуйте Object.freeze(), щоб зробити person незмінним. 
+            const person = { 
+            name: "John", 
+            age: 30 
+            }; 
+            person.age = 31; 
+            person.city = "New York"; 
+            console.log(person); // ? 
+            person = { name: "Alice", age: 25 }; // Чи спрацює?</q>
+
+        <button class="btn-task4" onclick="functionTask4()">Run task 4</button>, <span>Check result in console</span>
+    </div>
+
+
+    <div class="task5">
+        <q>Реалізуйте функцію checkType(value), яка визначає тип переданого значення. 
+            function checkType(value) { 
+            // Ваш код 
+            } 
+            console.log(checkType(10)); // "number" 
+            console.log(checkType("Hello")); // "string" 
+            console.log(checkType(null)); // "object" </q>
+        <button class="btn-task5" onclick="functionTask5()">Run task 5</button>, <span>Check result in console</span>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>

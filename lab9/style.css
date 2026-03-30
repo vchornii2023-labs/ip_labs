@@ -1,0 +1,10 @@
+    .task1,.task2,.task3,.task4,.task5 {
+        white-space: pre-wrap;
+    }
+
+    button {
+        scale: 1.2;
+        margin: 5px;
+        background-color: rgb(241, 245, 19);
+        border: solid 1px black;
+    }
