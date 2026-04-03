@@ -74,11 +74,10 @@
   /* position: relative; */
   display: flex;
   background-color: #f7f5fd;
-  height: 600px;
   padding: 70px 100px;
   justify-content: center;
   gap: 114px;
-  box-sizing: border-box;
+  width: 100%;
 }
 
 .description {
@@ -125,42 +124,152 @@
   align-items: start;
 }
 
-.intro_image {
+.intro__image {
   display: inline-block;
-  height: 600px;
 }
 
 /* Trailer */
 
 .trailer-box {
   display: flex;
+  flex-shrink: 3;
   justify-content: center;
   align-items: center;
+<<<<<<< Updated upstream
   height: 600px;
+=======
+  padding: 65px;
+>>>>>>> Stashed changes
   background-color: #f2faf8;
+  width: 100%;
 }
 
 .trailer-video {
   position: relative;
+  height: auto;
+  font-size: 0;
 }
 
 .trailer-video__image {
   border-radius: 10px;
-  z-index: 1;
 }
 
 .trailer-video__gradient {
   position: absolute;
   top: 0px;
-  background: linear-gradient(180deg,rgba(45, 45, 45, 0.9) 0%, rgba(45, 45, 45, 0.5) 100%);
+  background: linear-gradient(180deg, rgba(45, 45, 45, 0.9) 0%, rgba(45, 45, 45, 0.5) 100%);
   width: 765px;
   height: 460px;
   z-index: 2;
 }
 
 .trailer-video__icon {
+<<<<<<< Updated upstream
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: 3;
 }
+=======
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+}
+
+/* Brands */
+
+.brands-box__list {
+  display: flex;
+  gap: 70px;
+  list-style-type: none;
+  justify-content: center;
+  padding: 80px 172px;
+  margin: 0;
+}
+
+/* Cards box */
+
+.cards-box {
+  margin: 0 auto;
+  gap: 60px;
+  display: flex;
+  justify-content: center;
+  width: min-content;
+  padding: 90px 116px;
+}
+
+.card {
+  margin: 0 auto;
+  text-align: center;
+  width: 230px;
+  height: 268px;
+}
+
+.card__title {
+  font-family: "poppins";
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.card__desc {
+  font-family: "poppins";
+  font-size: 18px;
+  line-height: 32px;
+  color: #2d2d2d;
+  opacity: 50%;
+}
+
+.card__image {
+  margin: 0 auto 40px auto;
+}
+
+@media (max-width: 600px) {
+  .authentication {
+    display: none;
+  }
+  .description {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .description__title {
+    width: 100%;
+    text-align: center;
+  }
+  .intro {
+    flex-wrap: wrap;
+    gap: 0px;
+    padding: 0 0;
+    padding-bottom: 150px;
+  }
+  .intro__image {
+    width: min-content;
+  }
+
+  .trailer-box {
+
+  }
+  .trailer-video {
+
+  }
+  .trailer-video__image {
+
+  }
+  .trailer-video__gradient {
+
+  }
+  .trailer-video__icon {
+
+  }
+
+.brands-box__list{
+  flex-wrap: wrap;
+  padding: 80px 0px;
+}
+
+.cards-box {
+  flex-wrap: wrap;
+}
+}
+>>>>>>> Stashed changes
